@@ -13,6 +13,14 @@ require.config({
         }
     }
 })
+
+
+
 require(["nav"], function(nav) {
     nav.navDownload();
+    nav.searchClick();
+    nav.navTab();
+    nav.searchHover();
+    nav.searchClose();
+    nav.bannerList();
 })

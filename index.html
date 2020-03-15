@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-
+    <!-- <script src="js/jquery-1.11.3.js"></script> -->
     <script src="js/require.js" async="true" defer data-main=js/main.js></script>
 </head>
 
@@ -38,7 +38,7 @@
             <div class="header-nav-konkaicon">
                 <a href=""><img src="/images/header/header-nav-kankaicon.png" alt=""></a>
             </div>
-            <div class="header-nav-index"><a href="">首页</a></div>
+            <!-- <div class="header-nav-index"><a href="">首页</a></div> -->
             <ul class="header-nav-list">
                 <!-- <li><a href="">首页</a></li>
                 <li><a href="">电视</a></li>
@@ -54,19 +54,28 @@
             <div class="header-nav-searchicon">
                 <a href=""><img src="images/header/header-nav-search.png" alt=""></a>
             </div>
+
+            <div class="header-nav-search">
+                <button class="header-nav-search-close"><a href="">X</a></button>
+                <div class="header-nav-search-input">
+                    <img src="images/header/header-nav-search.png" alt="">
+                    <input type="text" placeholder="您喜欢的商品">
+                </div>
+                <ul class="header-nav-search-list">
+                    <li><a href="">电视</a></li>
+                    <li><a href="">冰箱</a></li>
+                    <li><a href="">洗衣机</a></li>
+                    <li><a href="">手机</a></li>
+                    <li><a href="">49X7</a></li>
+                    <li><a href="">A2</a></li>
+                    <li><a href="">OLED</a></li>
+                </ul>
+
+            </div>
             <!-- <a href=""></a> -->
         </div>
         <div class="header-nav-downlist">
-            <!-- <ul class="header-nav-downlist-ul">
-                假数据
-                <li>
-                    <a href=""><img src="../images/111.jpg" alt="">
-                    </a>
-                    <h4>SUPER KIMI 20...</h4>
-                    <p>诚意好礼，心意更多</p>
-                    <span>￥150.00</span>
-                </li>
-            </ul> -->
+            <div class="downlist-container"></div>
         </div>
     </div>
     <div class="banner">
@@ -110,7 +119,7 @@
 
         <div class="banner-container">
             <div class="banner-container-list">
-                <ul>
+                <ul class="banner-container-list-ul">
                     <!-- <li><a href="">电&nbsp;视<span>&gt;</span></a></li>
                     <li><a href="">冰&nbsp;箱<span>&gt;</span></a></li>
                     <li><a href="">洗衣机<span>&gt;</span></a></li>

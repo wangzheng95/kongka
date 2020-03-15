@@ -57,6 +57,65 @@ a {
     width: 1140px;
     margin: 0 auto;
     background: #f4f4f4; }
+    .header .header-nav .header-nav-search-active {
+      display: block; }
+    .header .header-nav .header-nav-search {
+      display: none;
+      width: 890px;
+      height: 290px;
+      background: pink;
+      z-index: 20;
+      position: relative;
+      top: 0;
+      left: 250px; }
+      .header .header-nav .header-nav-search .header-nav-search-close {
+        width: 50px;
+        height: 50px;
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 890px;
+        background: #f4f4f4;
+        outline: 0; }
+        .header .header-nav .header-nav-search .header-nav-search-close a {
+          color: #3a3a3a;
+          font-weight: 600;
+          font-size: 18px; }
+      .header .header-nav .header-nav-search .header-nav-search-input {
+        height: 50px;
+        background: #f4f4f4;
+        position: relative; }
+        .header .header-nav .header-nav-search .header-nav-search-input img {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 15px;
+          left: 0; }
+        .header .header-nav .header-nav-search .header-nav-search-input input {
+          width: 870px;
+          height: 30px;
+          padding: 1px 0 1px 0;
+          border: 0;
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          background: #f4f4f4;
+          outline: 0; }
+      .header .header-nav .header-nav-search .header-nav-search-list {
+        width: 890px;
+        height: 210px;
+        background: #ffffff;
+        padding: 15px 10px; }
+        .header .header-nav .header-nav-search .header-nav-search-list li {
+          width: 870px;
+          height: 30px;
+          padding: 0 0 0 30px; }
+          .header .header-nav .header-nav-search .header-nav-search-list li a {
+            width: 840px;
+            height: 30px;
+            font-size: 14px;
+            color: #767676;
+            line-height: 30px; }
     .header .header-nav .header-nav-konkaicon {
       margin-left: 15px;
       padding: 11px 15px;
@@ -77,14 +136,18 @@ a {
     .header .header-nav .header-nav-list {
       float: left;
       text-align: center; }
-      .header .header-nav .header-nav-list li {
+      .header .header-nav .header-nav-list .header-nav-list-active {
+        background: #ffffff; }
+      .header .header-nav .header-nav-list .header-nav-list-item {
         float: left;
         width: 72px;
         height: 50px; }
-        .header .header-nav .header-nav-list li a {
+        .header .header-nav .header-nav-list .header-nav-list-item a {
           color: #767676;
           font-size: 14px;
           line-height: 50px; }
+    .header .header-nav .header-nav-seachicon-hover {
+      background-color: #ffffff; }
     .header .header-nav .header-nav-searchicon {
       width: 72px;
       height: 50px;
@@ -102,40 +165,49 @@ a {
     padding: 20px 0 0 0;
     margin: 0 auto;
     z-index: 10;
-    background: #ffffff;
-    position: relative; }
-    .header .header-nav-downlist .header-nav-downlist-ul li {
-      padding: 0 15px;
-      width: 160px;
-      height: 260px;
-      float: left; }
-      .header .header-nav-downlist .header-nav-downlist-ul li a img {
-        width: 160px;
-        height: 160px; }
-      .header .header-nav-downlist .header-nav-downlist-ul li h4 {
-        font-size: 16px;
-        margin: 0 16px;
-        color: #222222;
-        width: 128px;
-        height: 30px;
-        font-weight: 500;
-        line-height: 30px; }
-      .header .header-nav-downlist .header-nav-downlist-ul li p {
-        width: 128px;
-        height: 30px;
-        margin: 0 16px;
-        font-size: 14px;
-        color: #989898;
-        line-height: 30px; }
-      .header .header-nav-downlist .header-nav-downlist-ul li span {
-        display: inline-block;
-        width: 160px;
-        height: 30px;
-        color: #ED1c24;
-        margin: 0 0 10px;
-        font-size: 14px;
-        line-height: 30px;
-        text-align: center; }
+    position: relative;
+    display: none; }
+    .header .header-nav-downlist .downlist-container {
+      background: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 310px; }
+      .header .header-nav-downlist .downlist-container .header-nav-downlist-ul {
+        height: 310px; }
+        .header .header-nav-downlist .downlist-container .header-nav-downlist-ul li {
+          padding: 0 15px;
+          width: 160px;
+          height: 260px;
+          float: left; }
+          .header .header-nav-downlist .downlist-container .header-nav-downlist-ul li a img {
+            width: 160px;
+            height: 160px; }
+          .header .header-nav-downlist .downlist-container .header-nav-downlist-ul li h4 {
+            font-size: 16px;
+            margin: 0 16px;
+            color: #222222;
+            width: 128px;
+            height: 30px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center; }
+          .header .header-nav-downlist .downlist-container .header-nav-downlist-ul li p {
+            width: 128px;
+            height: 30px;
+            margin: 0 16px;
+            font-size: 14px;
+            color: #989898;
+            line-height: 30px; }
+          .header .header-nav-downlist .downlist-container .header-nav-downlist-ul li span {
+            display: inline-block;
+            width: 160px;
+            height: 30px;
+            color: #ED1c24;
+            margin: 0 0 10px;
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center; }
 
 .banner {
   height: 500px;
@@ -202,22 +274,24 @@ a {
       height: 100%;
       float: left;
       padding: 25px 0; }
-      .banner .banner-container .banner-container-list ul li a {
-        display: block;
-        position: relative;
-        width: 234px;
-        height: 45px;
-        padding: 0 0 0 30px;
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 45px; }
-        .banner .banner-container .banner-container-list ul li a span {
-          position: absolute;
-          top: -2px;
-          right: 20px;
-          font-size: 30px;
+      .banner .banner-container .banner-container-list .banner-container-list-ul .banner-container-list-ul-item {
+        height: 45px; }
+        .banner .banner-container .banner-container-list .banner-container-list-ul .banner-container-list-ul-item a {
+          display: block;
+          position: relative;
+          width: 234px;
+          height: 45px;
+          padding: 0 0 0 30px;
           color: #ffffff;
+          font-size: 16px;
           line-height: 45px; }
+          .banner .banner-container .banner-container-list .banner-container-list-ul .banner-container-list-ul-item a span {
+            position: absolute;
+            top: -2px;
+            right: 20px;
+            font-size: 30px;
+            color: #ffffff;
+            line-height: 45px; }
 
 .bottom {
   width: 1140px;

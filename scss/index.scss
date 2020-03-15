@@ -72,6 +72,75 @@ a {
         width: 1140px;
         margin: 0 auto;
         background: #f4f4f4;
+        .header-nav-search-active {
+            display: block;
+        }
+        .header-nav-search {
+            display: none;
+            width: 890px;
+            height: 290px;
+            background: pink;
+            z-index: 20;
+            position: relative;
+            top: 0;
+            left: 250px;
+            .header-nav-search-close {
+                width: 50px;
+                height: 50px;
+                border: 0;
+                a {
+                    color: #3a3a3a;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                position: absolute;
+                top: 0;
+                left: 890px;
+                background: #f4f4f4;
+                outline: 0;
+            }
+            .header-nav-search-input {
+                height: 50px;
+                background: #f4f4f4;
+                position: relative;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 15px;
+                    left: 0;
+                }
+                input {
+                    width: 870px;
+                    height: 30px;
+                    padding: 1px 0 1px 0;
+                    border: 0;
+                    position: absolute;
+                    top: 10px;
+                    left: 20px;
+                    background: #f4f4f4;
+                    outline: 0;
+                }
+            }
+            .header-nav-search-list {
+                width: 890px;
+                height: 210px;
+                background: #ffffff;
+                padding: 15px 10px;
+                li {
+                    width: 870px;
+                    height: 30px;
+                    padding: 0 0 0 30px;
+                    a {
+                        width: 840px;
+                        height: 30px;
+                        font-size: 14px;
+                        color: #767676;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
         .header-nav-konkaicon {
             margin-left: 15px;
             padding: 11px 15px;
@@ -96,16 +165,23 @@ a {
         .header-nav-list {
             float: left;
             text-align: center;
-            li {
+            .header-nav-list-active {
+                background: #ffffff;
+            }
+            .header-nav-list-item {
                 float: left;
                 width: 72px;
                 height: 50px;
                 a {
+                    // color: orange;
                     color: #767676;
                     font-size: 14px;
                     line-height: 50px;
                 }
             }
+        }
+        .header-nav-seachicon-hover {
+            background-color: #ffffff;
         }
         .header-nav-searchicon {
             width: 72px;
@@ -128,50 +204,56 @@ a {
         padding: 20px 0 0 0;
         margin: 0 auto;
         z-index: 10;
-        background: #ffffff;
+        // overflow: hidden;
         position: relative;
-        // display: none;
-        .header-nav-downlist-ul {
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            li {
-                padding: 0 15px;
-                width: 160px;
-                height: 260px;
-                float: left;
-                a {
-                    img {
-                        width: 160px;
-                        height: 160px;
-                    }
-                }
-                h4 {
-                    font-size: 16px;
-                    margin: 0 16px;
-                    color: #222222;
-                    width: 128px;
-                    height: 30px;
-                    font-weight: 500;
-                    line-height: 30px;
-                }
-                p {
-                    width: 128px;
-                    height: 30px;
-                    margin: 0 16px;
-                    font-size: 14px;
-                    color: #989898;
-                    line-height: 30px;
-                }
-                span {
-                    display: inline-block;
+        display: none;
+        .downlist-container {
+            background: #ffffff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 310px;
+            .header-nav-downlist-ul {
+                height: 310px;
+                li {
+                    padding: 0 15px;
                     width: 160px;
-                    height: 30px;
-                    color: #ED1c24;
-                    margin: 0 0 10px;
-                    font-size: 14px;
-                    line-height: 30px;
-                    text-align: center;
+                    height: 260px;
+                    float: left;
+                    a {
+                        img {
+                            width: 160px;
+                            height: 160px;
+                        }
+                    }
+                    h4 {
+                        font-size: 16px;
+                        margin: 0 16px;
+                        color: #222222;
+                        width: 128px;
+                        height: 30px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        text-align: center;
+                    }
+                    p {
+                        width: 128px;
+                        height: 30px;
+                        margin: 0 16px;
+                        font-size: 14px;
+                        color: #989898;
+                        line-height: 30px;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 160px;
+                        height: 30px;
+                        color: #ED1c24;
+                        margin: 0 0 10px;
+                        font-size: 14px;
+                        line-height: 30px;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -258,8 +340,9 @@ a {
             height: 100%;
             float: left;
             padding: 25px 0;
-            ul {
-                li {
+            .banner-container-list-ul {
+                .banner-container-list-ul-item {
+                    height: 45px;
                     a {
                         display: block;
                         position: relative;
