@@ -5,15 +5,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/require.js" async="true" defer data-main=js/main.js></script>
 </head>
 
 <body>
-    <h1>你好</h1>
-    <h2>今天周三</h2>
-    <div id="div1">111</div>
-    <div id="div2">2222</div>
-    <span>qidiren</span>
+    <div class="header">
+        <div class="header-top-box">
+            <div class="header-top">
+                <div class="header-top-left">
+                    <a href="">康佳新闻</a><span>|</span>
+                    <a href="">加入康佳</a><span>|</span>
+                    <a href="">校园招聘</a><span>|</span>
+                    <a href="">康佳社区</a><span>|</span>
+                    <a href="">大宗采购</a><span>|</span>
+                    <a href="">积分商城</a><span>|</span>
+                </div>
+                <div class="header-top-shoppingcar">
+                    <a href="">
+                        <img src="images/header/header-top-shoppingcar.png" alt=""> 购物车(<span class="car-num">0</span>)
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="">登录</a>
+                    <span>|</span>
+                    <a href="">注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-konkaicon">
+                <a href=""><img src="/images/header/header-nav-kankaicon.png" alt=""></a>
+            </div>
+            <div class="header-nav-index"><a href="">首页</a></div>
+            <ul class="header-nav-list">
+                <!-- <li><a href="">首页</a></li>
+                <li><a href="">电视</a></li>
+                <li><a href="">冰箱</a></li>
+                <li><a href="">洗衣机</a></li>
+                <li><a href="">生活电器</a></li>
+                <li><a href="">厨卫电器</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">K迷优品</a></li>
+                <li><a href="">大宗采购</a></li>
+                <li><a href="">服务</a></li> -->
+            </ul>
+            <div class="header-nav-searchicon">
+                <a href=""><img src="images/header/header-nav-search.png" alt=""></a>
+            </div>
+            <!-- <a href=""></a> -->
+        </div>
+        <div class="header-nav-downlist">
+            <!-- <ul class="header-nav-downlist-ul">
+                假数据
+                <li>
+                    <a href=""><img src="../images/111.jpg" alt="">
+                    </a>
+                    <h4>SUPER KIMI 20...</h4>
+                    <p>诚意好礼，心意更多</p>
+                    <span>￥150.00</span>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-imglist">
+            <ul>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-7.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-1.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-2.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-3.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-4.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-5.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-6.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-7.jpg " alt=" "></a>
+                </li>
+                <li>
+                    <a href=" "><img src="images/banner-img/banner-img-1.jpg " alt=" "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner-img-left">
+            <span class="banner-img-lefticon">&lt;</span>
+        </div>
+        <div class="banner-img-right">
+            <span class="banner-img-righticon">&gt;</span>
+        </div>
+
+        <div class="banner-container">
+            <div class="banner-container-list">
+                <ul>
+                    <!-- <li><a href="">电&nbsp;视<span>&gt;</span></a></li>
+                    <li><a href="">冰&nbsp;箱<span>&gt;</span></a></li>
+                    <li><a href="">洗衣机<span>&gt;</span></a></li>
+                    <li><a href="">生活电器<span>&gt;</span></a></li>
+                    <li><a href="">厨卫电器<span>&gt;</span></a></li>
+                    <li><a href="">智能硬件<span>&gt;</span></a></li>
+                    <li><a href="">智能家居<span>&gt;</span></a></li>
+                    <li><a href="">K迷优品<span>&gt;</span></a></li>
+                    <li><a href="">周边配件<span>&gt;</span></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom ">
+        <div class="bottom-text ">
+            <ul>
+                <li>
+                    <div class="bottom-text-icon ">
+                        <img src="images/bottom/bottom-text-1.png " alt=" ">
+                    </div>
+                    <div class="bottom-text-title ">
+                        <h4>全场包邮</h4>
+                        <span>全场商品免费送到家</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottom-text-icon ">
+                        <img src="images/bottom/bottom-text-2.png " alt=" ">
+                    </div>
+                    <div class="bottom-text-title ">
+                        <h4>质量保证</h4>
+                        <span>享受国家三包政策</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottom-text-icon ">
+                        <img src="images/bottom/bottom-text-3.png " alt=" ">
+                    </div>
+                    <div class="bottom-text-title ">
+                        <h4>权益保证</h4>
+                        <span>7天包退15天包换</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottom-text-icon ">
+                        <img src="images/bottom/bottom-text-4.png " alt=" ">
+                    </div>
+                    <div class="bottom-text-title ">
+                        <h4>放心服务</h4>
+                        <span>24小时内上门服务</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottom-text-icon ">
+                        <img src="images/bottom/bottom-text-5.png " alt=" ">
+                    </div>
+                    <div class="bottom-text-title ">
+                        <h4>意外惊喜</h4>
+                        <span>限时打折优惠不断</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-link ">
+            <div class="bottom-link-list ">
+                <dl>
+                    <dt>帮助中心
+                    <dd><a href=" ">购买指南</a></dd>
+                    <dd><a href=" ">支付方式</a></dd>
+                    <dd><a href=" ">配送方式</a></dd>
+                    <dd><a href=" ">售后政策</a></dd>
+                    <dd><a href=" ">防伪查询</a></dd>
+                </dt>
+                </dl>
+                <dl>
+                    <dt>新闻中心
+                    <dd><a href=" ">集团新闻</a></dd>
+                    <dd><a href=" ">媒体报道</a></dd>
+                </dt>
+                </dl>
+                <dl>
+                    <dt>投资者关系
+                    <dd><a href=" ">公司概要</a></dd>
+                    <dd><a href=" ">高管团队</a></dd>
+                    <dd><a href=" ">最新公告</a></dd>
+                    <dd><a href=" ">公司治理</a></dd>
+                </dt>
+                </dl>
+                <dl>
+                    <dt>集团成员网站
+                    <dd><a href=" ">华侨城集团</a></dd>
+                    <dd><a href=" ">康佳全球服务中心</a></dd>
+                    <dd><a href=" ">康佳国际营销</a></dd>
+                    <dd><a href=" ">康佳移动互联科技</a></dd>
+                    <dd><a href=" ">康佳壹视界商业显示</a></dd>
+                    <dd><a href=" ">康佳智能电器</a></dd>
+                </dt>
+                </dl>
+                <dl>
+                    <dt>关于我们
+                    <dd><a href=" ">了解康佳</a></dd>
+                    <dd><a href=" ">加入康佳</a></dd>
+                    <dd><a href=" ">校园招聘</a></dd>
+                    <dd><a href=" ">联系我们</a></dd>
+                </dt>
+                </dl>
+                <dl>
+                    <dt>关注我们
+                    <dd><a href=" ">官方微博</a></dd>
+                    <dd><a href=" ">官方微信</a></dd>
+                    <dd><a href=" ">官方社区</a></dd>
+                    <dd><a href=" ">K迷俱乐部</a></dd>
+                    <dd><a href=" ">康佳微商城</a></dd>
+                    <dd><a href=" ">康佳服务</a></dd>
+                    <dd><a href=" ">腾讯视频TV端</a></dd>
+                </dt>
+                </dl>
+            </div>
+            <div class="bottom-link-phone ">
+                <p class="text ">24小时全国服务热线</p>
+                <p class="phone-number ">400-880-0016</p>
+                <a href=" ">
+                    <!-- <div><img src=" " alt=" "></div> </div>-->
+                    购买咨询
+                </a>
+                <a href=" ">
+                    <!-- <div><img src=" " alt=" "></div> -->
+                    售后服务
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text ">
+        <div class="footer-text-icon "><img src="images/footer/footer-text-1.png " alt=" "></div>
+        <!-- <div class="footer-text-link "> -->
+        <ul class="footer-text-link ">
+            <span>|</span>
+            <li><a href=" ">联系我们</a></li>
+            <span>|</span>
+            <li><a href=" ">法律声明</a></li>
+            <span>|</span>
+            <li><a href=" ">隐私保护</a></li>
+            <span>|</span>
+            <li><a href=" ">快递查询</a></li>
+            <span>|</span>
+            <li><a href=" ">腾讯视频TV端</a></li>
+            <span>|</span>
+            <li><a href=" ">粤ICP备 05059413</a></li>
+        </ul>
+        <p class="footer-text-p ">Copyright © 1980-2019 康佳集团股份有限公司 版权所有</p>
+        <!-- </div> -->
+    </div>
+    <div class="footer-imglink ">
+        <a href=" "><img src="images/footer/footer-imglink-1.png " alt=" "></a>
+        <a href=" "><img src="images/footer/footer-imglink-2.png " alt=" "></a>
+        <a href=" "><img src="images/footer/footer-imglink-3.gif " alt=" "></a>
+    </div>
 </body>
 
 </html>

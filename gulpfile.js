@@ -8,7 +8,7 @@ gulp.task("copy-html", function() {
     })
     // images
 gulp.task("images", function() {
-        return gulp.src("*.{jpg,png}")
+        return gulp.src("images/**/*")
             .pipe(gulp.dest("dist/images"))
             .pipe(connect.reload())
     })
@@ -30,11 +30,11 @@ const scss = require("gulp-sass")
 const minify = require("gulp-minify")
 const rename = require("gulp-rename")
 gulp.task("scss", function() {
-    return gulp.src("scss/1.scss")
+    return gulp.src("scss/index.scss")
         .pipe(scss())
         .pipe(gulp.dest("dist/css"))
         .pipe(minify())
-        .pipe(rename("1.min.css"))
+        .pipe(rename("index.min.css"))
         .pipe(gulp.dest("dist/css"))
         .pipe(connect.reload())
 })
@@ -47,10 +47,10 @@ gulp.task("build", ["copy-html", "images", "scripts", "data", "scss"], function(
 // 启动监听
 gulp.task("watch", function() {
         gulp.watch("*.html", ["copy-html"])
-        gulp.watch("*.{jpg,png}", ["images"])
+        gulp.watch("images/**/*", ["images"])
         gulp.watch(["*.js", "!gulpfile.js"], ["scripts"])
         gulp.watch(["*.json", "!package.json"], ["data"])
-        gulp.watch("scss/1.scss", ["scss"])
+        gulp.watch("scss/index.scss", ["scss"])
     })
     // 启动一个服务器
 const connect = require("gulp-connect")
